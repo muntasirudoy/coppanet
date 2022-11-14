@@ -1,14 +1,28 @@
 import React from "react";
+import About from "../../components/About";
 import Banner from "../../components/Banner";
 import { bannerText } from "../../components/bannerInfo";
+import Blogs from "../../components/Blogs";
+import Clients from "../../components/Clients";
 import Container from "../../components/Container";
+import Job from "../../components/Job";
+import JoinUs from "../../components/JoinUs";
+import Projects from "../../components/Projects";
+import Sponsor from "../../components/Sponsor";
+import Team from "../../components/Team";
 
 const Home = ({}) => {
   return (
     <div>
-      <Container>
-        <Banner bannerText={bannerText} />
-      </Container>
+      <Banner />
+      <Sponsor />
+      <About />
+      <Projects />
+      <Team />
+      <Clients />
+      <Blogs />
+      <Job />
+      <JoinUs />
     </div>
   );
 };

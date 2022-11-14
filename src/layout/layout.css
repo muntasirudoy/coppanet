@@ -1,0 +1,90 @@
+.headers.style-4.style-5 {
+    position: relative;
+    background-color: var(--white)
+}
+
+.headers.style-4.style-5.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background: var(--white);
+    box-shadow: 5px 3px 40px rgba(0, 72, 88, .1);
+    animation: smooth-header .65s linear
+}
+
+@keyframes smooth-header {
+    0% {
+        transform: translateY(-30px)
+    }
+
+    100% {
+        transform: translateY(0px)
+    }
+}
+
+.headers.style-4.style-5 .header-btn {
+    color: var(--primary-color5);
+    border: 1px solid var(--primary-color5);
+    white-space: nowrap;
+    font-family: poppins, sans-serif
+}
+
+.headers.style-4.style-5 .header-btn:hover {
+    background: var(--primary-color5)
+}
+
+.headers.style-4.style-5 .header-btn:hover a {
+    color: var(--white)
+}
+
+@media(max-width:1199px) {
+    .headers.style-4.style-5 .header-btn {
+        display: none;
+        visibility: hidden
+    }
+}
+
+.headers.style-4.style-5 .nav-right .header-icons {
+    margin-right: 10px
+}
+
+@media(max-width:1199px) {
+    .headers.style-4.style-5 .nav-right .header-icons {
+        margin-right: 0
+    }
+}
+
+.headers.style-4.style-5 .nav-right ul.header-social {
+    margin: 0;
+    padding: 0
+}
+
+.headers.style-4.style-5 .nav-right ul.header-social li a:hover {
+    color: var(--primary-color5)
+}
+
+.headers.style-4.style-5 .main-nav {
+    display: inline-block
+}
+
+.headers.style-4.style-5 .main-nav .mobile-menu-logo {
+    display: none
+}
+
+.headers.style-4.style-5 .main-nav ul li a:hover {
+    color: var(--primary-color5)
+}
+
+.headers.style-4.style-5 .main-nav ul li a.active {
+    color: var(--primary-color5)
+}
+
+.headers.style-4.style-5 .main-nav ul li ul.sub-menu>li a:hover {
+    color: var(--primary-color5);
+    margin-left: 10px
+}
+
+.headers.style-4.style-5 .main-nav ul li ul.sub-menu>li a.active {
+    color: var(--primary-color5)
+}

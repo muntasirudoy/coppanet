@@ -1,0 +1,156 @@
+import React from "react";
+import Container from "./Container";
+import img1 from "../assets/images/bg/client21.png";
+import img2 from "../assets/images/icons/quote4.svg";
+
+const Clients = () => {
+  return (
+    <>
+      <div className="testimonial-section4">
+        <Container>
+          <div className="row flex justify-between">
+            <div className="w-[58%]">
+              <div className=" text-white text-start">
+                <span>-Testimonial-</span>
+                <h3 className="text-gray-50 text-[46px]">
+                  Our Client Feedback
+                </h3>
+              </div>
+              <div className="testimonial-area mt-8">
+                <div className="swiper testimonial-slider4 swiper-fix">
+                  <div className="swiper-wrapper flex">
+                    <div className="swiper-slide">
+                      <div
+                        className="testimonial-single3 style-3 wow fadeInUp"
+                        data-wow-duration="1.5s"
+                        data-wow-delay=".2s"
+                      >
+                        <div className="author-area">
+                          <div className="author gap-3">
+                            <div className="author-img">
+                              <img src={img1} alt="image" />
+                            </div>
+                            <div className="author-desig">
+                              <h5>Johan Martin Sr</h5>
+                              <p>Manager</p>
+                            </div>
+                          </div>
+                          <img src={img2} alt="image" />
+                        </div>
+                        <p className=" text-gray-600 !text-sm !leading-6 !font-normal">
+                          You have been absolutely wonderful for Kinship Center,
+                          & I can't thank you enough for all your tremendous
+                          skills, support and patience specia lly during our
+                          merger. You will always be Kinship Center's vendor of
+                          choice! Lorem Ipsum is simply dumm of free available
+                          in market the way printing and typesetting industry
+                          has been the industry's standard dummy text ever.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="testimonial-footer">
+                    <div className="testimonial4-pagination"></div>
+                    <div className="slider-arrows2 style-4 text-center d-flex gap-4">
+                      <div
+                        className="testi-prev4 swiper-prev-arrow"
+                        tabindex="0"
+                        role="button"
+                        aria-label="Previous slide"
+                      >
+                        <i className="bi bi-arrow-left"></i>
+                      </div>
+                      <div
+                        className="testi-next4 swiper-next-arrow"
+                        tabindex="0"
+                        role="button"
+                        aria-label="Next slide"
+                      >
+                        <i className="bi bi-arrow-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="w-[38%]">
+              <div
+                className="company-counter style-2 wow fadeInUp"
+                data-wow-duration="1.5s"
+                data-wow-delay="0.2s"
+              >
+                <div className="row gap-4 flex-wrap flex justify-content-center">
+                  <div className="w-[48%]">
+                    <div
+                      className="counter-single style-2 text-center d-flex flex-row wow animate fadeInDown"
+                      data-wow-duration="1.5s"
+                      data-wow-delay="0.2s"
+                    >
+                      <div className="coundown">
+                        <h2 className="odometer" data-odometer-final="450">
+                          +26
+                        </h2>
+                        <span>{/* <i className="bx bx-plus"></i> */}</span>
+                        <br />
+                        <a href="#">Project</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-[48%]">
+                    <div
+                      className="counter-single style-2 text-center d-flex flex-row wow animate fadeInDown"
+                      data-wow-duration="1.5s"
+                      data-wow-delay="0.4s"
+                    >
+                      <div className="coundown">
+                        <h2 className="odometer" data-odometer-final="50">
+                          &nbsp; +56
+                        </h2>
+                        <span>{/* <i className="bx bx-plus"></i> */}</span>{" "}
+                        <br />
+                        <a href="#">Customer</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-[48%]">
+                    <div
+                      className="counter-single style-2 text-center d-flex flex-row wow animate fadeInDown"
+                      data-wow-duration="1.5s"
+                      data-wow-delay="0.6s"
+                    >
+                      <div className="coundown">
+                        <h2 className="odometer" data-odometer-final="963">
+                          +125
+                        </h2>
+                        <br />
+                        <a href="#">Success</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="w-[48%]">
+                    <div
+                      className="counter-single style-2 text-center d-flex flex-row wow animate fadeInDown"
+                      data-wow-duration="1.5s"
+                      data-wow-delay="0.8s"
+                    >
+                      <div className="coundown">
+                        <h2 className="odometer" data-odometer-final="50">
+                          20
+                        </h2>
+                        <span>{/* <i className="bx bx-plus"></i> */}</span>{" "}
+                        <br />
+                        <a href="#">Awards</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </div>
+    </>
+  );
+};
+
+export default Clients;
