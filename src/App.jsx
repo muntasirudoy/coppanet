@@ -10,12 +10,14 @@ import OurProjects from "./pages/our_projects";
 import { ProjectDetails } from "./pages/projects_details";
 import Contact from "./pages/contact";
 import { Route, Routes } from "react-router-dom";
+
 function App() {
   return (
     <>
       <Layout>
-        {/* <Routes>
+        <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/team" element={<Team />} />
           <Route path="/faq" element={<Faq />} />
@@ -23,9 +25,9 @@ function App() {
           <Route path="/projects" element={<OurProjects />} />
           <Route path="/project-details" element={<ProjectDetails />} />
           <Route path="/contact" element={<Contact />} />
-        </Routes> */}
+        </Routes>
 
-        <Home />
+        {/* <Home /> */}
         {/* <About /> */}
         {/* <Team /> */}
         {/* <Faq /> */}

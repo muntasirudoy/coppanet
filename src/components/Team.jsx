@@ -34,31 +34,37 @@ const Team = () => {
                 <div className="team-image h-[320px]">
                   <img src={img2} alt="image" />
                   <div className="social-area gap-3">
-                    <div className="social-plus">
-                      <i className="bx bx-plus"></i>
+                    <div className="social-plus flex justify-center items-center">
+                      <ion-icon size="small" name="chatbox-outline"></ion-icon>
                     </div>
                     <ul className="social-links d-flex justify-content-center align-items-center flex-column gap-3">
                       <li>
-                        <a href="https://www.instagram.com/">
-                          <i className="bx bxl-instagram"></i>
-                        </a>
-                      </li>
-                      <li>
                         <a href="https://www.facebook.com/">
-                          <i className="bx bxl-facebook"></i>
+                          <ion-icon
+                            size="small"
+                            name="logo-facebook"
+                          ></ion-icon>
                         </a>
                       </li>
                       <li>
                         <a href="https://www.twitter.com/">
-                          <i className="bx bxl-twitter"></i>
+                          <ion-icon size="small" name="logo-twitter"></ion-icon>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/">
+                          <ion-icon
+                            size="small"
+                            name="logo-instagram"
+                          ></ion-icon>
                         </a>
                       </li>
                     </ul>
                   </div>
                 </div>
                 <div className="team-content">
-                  <h4 className="name">Esther Howard</h4>
-                  <p className="designation">CEO/Founder</p>
+                  <h4 className="name">Lincoln Anthony</h4>
+                  <p className="designation">Manager</p>
                 </div>
               </div>
             </div>
@@ -71,23 +77,29 @@ const Team = () => {
                 <div className="team-image  h-[320px]">
                   <img src={img3} alt="image" />
                   <div className="social-area gap-3">
-                    <div className="social-plus">
-                      <i className="bx bx-plus"></i>
+                    <div className="social-plus flex justify-center items-center">
+                      <ion-icon size="small" name="chatbox-outline"></ion-icon>
                     </div>
                     <ul className="social-links d-flex justify-content-center align-items-center flex-column gap-3">
                       <li>
-                        <a href="https://www.instagram.com/">
-                          <i className="bx bxl-instagram"></i>
-                        </a>
-                      </li>
-                      <li>
                         <a href="https://www.facebook.com/">
-                          <i className="bx bxl-facebook"></i>
+                          <ion-icon
+                            size="small"
+                            name="logo-facebook"
+                          ></ion-icon>
                         </a>
                       </li>
                       <li>
                         <a href="https://www.twitter.com/">
-                          <i className="bx bxl-twitter"></i>
+                          <ion-icon size="small" name="logo-twitter"></ion-icon>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/">
+                          <ion-icon
+                            size="small"
+                            name="logo-instagram"
+                          ></ion-icon>
                         </a>
                       </li>
                     </ul>
@@ -108,23 +120,29 @@ const Team = () => {
                 <div className="team-image  h-[320px]">
                   <img src={img3} alt="image" />
                   <div className="social-area gap-3">
-                    <div className="social-plus">
-                      <i className="bx bx-plus"></i>
+                    <div className="social-plus flex justify-center items-center">
+                      <ion-icon size="small" name="chatbox-outline"></ion-icon>
                     </div>
                     <ul className="social-links d-flex justify-content-center align-items-center flex-column gap-3">
                       <li>
-                        <a href="https://www.instagram.com/">
-                          <i className="bx bxl-instagram"></i>
-                        </a>
-                      </li>
-                      <li>
                         <a href="https://www.facebook.com/">
-                          <i className="bx bxl-facebook"></i>
+                          <ion-icon
+                            size="small"
+                            name="logo-facebook"
+                          ></ion-icon>
                         </a>
                       </li>
                       <li>
                         <a href="https://www.twitter.com/">
-                          <i className="bx bxl-twitter"></i>
+                          <ion-icon size="small" name="logo-twitter"></ion-icon>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/">
+                          <ion-icon
+                            size="small"
+                            name="logo-instagram"
+                          ></ion-icon>
                         </a>
                       </li>
                     </ul>
@@ -145,23 +163,29 @@ const Team = () => {
                 <div className="team-image h-[320px]">
                   <img src={img4} alt="image" />
                   <div className="social-area gap-3">
-                    <div className="social-plus">
-                      <i className="bx bx-plus"></i>
+                    <div className="social-plus flex justify-center items-center">
+                      <ion-icon size="small" name="chatbox-outline"></ion-icon>
                     </div>
                     <ul className="social-links d-flex justify-content-center align-items-center flex-column gap-3">
                       <li>
-                        <a href="https://www.instagram.com/">
-                          <i className="bx bxl-instagram"></i>
-                        </a>
-                      </li>
-                      <li>
                         <a href="https://www.facebook.com/">
-                          <i className="bx bxl-facebook"></i>
+                          <ion-icon
+                            size="small"
+                            name="logo-facebook"
+                          ></ion-icon>
                         </a>
                       </li>
                       <li>
                         <a href="https://www.twitter.com/">
-                          <i className="bx bxl-twitter"></i>
+                          <ion-icon size="small" name="logo-twitter"></ion-icon>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/">
+                          <ion-icon
+                            size="small"
+                            name="logo-instagram"
+                          ></ion-icon>
                         </a>
                       </li>
                     </ul>

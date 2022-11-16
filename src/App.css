@@ -2576,7 +2576,7 @@ header.style-4 .nav-right .search-btn .bi {
 
 header.style-4 .header-logo img {
     min-width: 120px;
-    max-width: 100%
+    max-width: 70%
 }
 
 header.style-4 .header-btn {
@@ -2668,9 +2668,9 @@ header.style-4 .main-nav ul li i {
 
 header.style-4 .main-nav ul li ul.sub-menu {
     position: absolute;
-    left: 0;
+    left: 22px;
     right: 0;
-    top: auto;
+    top: 62px;
     margin: 0;
     padding: 0;
     opacity: 0;
@@ -2901,18 +2901,9 @@ header.style-4 .main-nav ul li.menu-item-has-children>i {
 
 header.style-4.style-5 {
     position: relative;
-    background-color: var(--white)
 }
 
-header.style-4.style-5.sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    background: var(--white);
-    box-shadow: 5px 3px 40px rgba(0, 72, 88, .1);
-    animation: smooth-header .65s linear
-}
+
 
 @keyframes smooth-header {
     0% {
@@ -3426,7 +3417,7 @@ header.style-4.style-5 .main-nav ul li ul.sub-menu>li a.active {
 }
 
 .banner-social a:hover {
-    color: var(--primary-color1)
+    color: var(--primary-color5)
 }
 
 .banner-social.style-2 {
@@ -5593,7 +5584,7 @@ header.style-4.style-5 .main-nav ul li ul.sub-menu>li a.active {
     border: 1px solid #bebebe;
     border-radius: 50%;
     position: absolute;
-    right: -50px;
+    right: 0px;
     top: 50%;
     transform: translateY(-50%);
     transition: all .42s ease
@@ -6527,7 +6518,7 @@ header.style-4.style-5 .main-nav ul li ul.sub-menu>li a.active {
 }
 
 .single-team1 .team-image .social-area .social-plus:hover {
-    background-color: var(--primary-color1);
+    background-color: var(--primary-color5);
     color: var(--white)
 }
 

@@ -17,22 +17,22 @@ const Banner = ({ bannerText }) => {
         <ul class="banner-social style-2 gap-4">
           <li>
             <a href="https://www.facebook.com/">
-              <i class="bx bxl-facebook"></i>
+              <ion-icon size="large" name="logo-facebook"></ion-icon>
             </a>
           </li>
           <li>
             <a href="https://www.twitter.com/">
-              <i class="bx bxl-twitter"></i>
+              <ion-icon size="large" name="logo-twitter"></ion-icon>
             </a>
           </li>
           <li>
-            <a href="https://www.pinterest.com/">
-              <i class="bx bxl-pinterest"></i>
+            <a href="https://www.youtube.com/">
+              <ion-icon size="large" name="logo-youtube"></ion-icon>
             </a>
           </li>
           <li>
             <a href="https://www.instagram.com/">
-              <i class="bx bxl-instagram"></i>
+              <ion-icon size="large" name="logo-instagram"></ion-icon>
             </a>
           </li>
         </ul>
@@ -44,14 +44,19 @@ const Banner = ({ bannerText }) => {
         <img src={img4} class="banner5-vector-left img-fluid" alt="image" />
         <img src={img5} class="banner5-vector img-fluid" alt="image" />
         <Container>
-          <div class="row w-full flex justify-between items-center">
+          <div class="row w-full pt-[50px] flex justify-between items-center">
             <div class="w-[60%]">
               <div
                 class="banner-content style-3  wow fadeInLeft"
                 data-wow-duration="1.5s"
                 data-wow-delay="0.2s"
               >
-                <span>Wellcome to Our Coppanet Ltd.</span>
+                <span>
+                  Wellcome to{" "}
+                  <p className=" !text-[#fa3f3f] inline-block bg-[#ffcdcd]/40 px-3 rounded-sm">
+                    Coppanet Ltd.
+                  </p>
+                </span>
                 <h1>Creative To Plan Your Business Company</h1>
                 <p class="para">
                   We develop mobile application platforms across different

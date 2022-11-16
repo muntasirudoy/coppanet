@@ -1,23 +1,59 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Button from "../components/Button";
 import Container from "../components/Container";
 import List from "../components/List";
 import { MenuItems } from "./helper";
 import logo from "../assets/logo-01.svg";
+import logo2 from "../assets/logo-white.svg";
 import "./layout.css";
-
+import { Link } from "react-router-dom";
 const btnText = {
   name: "Call Now",
   padding: "10px 25px",
 };
+
 const Header = () => {
+  const [navCol, setNavCol] = useState(true);
+
+  useEffect(() => {
+    handleCheck();
+    window.addEventListener("scroll", isSticky);
+    return () => {
+      window.removeEventListener("scroll", isSticky);
+    };
+  }, [window.location.pathname]);
+
+  const isSticky = (e) => {
+    const header = document.querySelector(".headTop");
+    const scrollTop = window.scrollY;
+
+    if (scrollTop >= 250) {
+      header.classList.add("is-sticky");
+    } else {
+      header.classList.remove("is-sticky");
+    }
+  };
+
+  const handleCheck = () => {
+    if (window.location.pathname == "/") {
+      setNavCol(true);
+    } else {
+      setNavCol(false);
+    }
+  };
+
+  console.log(navCol);
   return (
-    <div className=" border z-50">
+    <div className="headTop z-50 absolute w-full ">
       <Container>
         <header className="headers header-area style-4 style-5 z-50+">
           <div className="header-logo flex items-center h-full">
             <a href="index.html">
-              <img alt="Coppanet" src={logo} className="img-fluid" />
+              <img
+                alt="Coppanet"
+                src={navCol ? logo : logo2}
+                className="img-fluid"
+              />
             </a>
           </div>
           <div className="main-nav">
@@ -33,28 +69,50 @@ const Header = () => {
             </div>
             <ul className="menu-list">
               <li className="menu-item-has-children">
+                <Link
+                  className="active"
+                  to="/"
+                  onClick={handleCheck}
+                  style={
+                    navCol == true ? { color: "black" } : { color: "white" }
+                  }
+                >
+                  Home
+                </Link>
                 <i className="bi bi-chevron-down dropdown-icon"></i>
               </li>
               <li className="menu-item-has-children">
-                <a href="#" className="drop-down">
+                <a
+                  href="/"
+                  className="drop-down"
+                  style={
+                    navCol == true ? { color: "black" } : { color: "white" }
+                  }
+                  onClick={handleCheck}
+                >
                   Company
                 </a>
                 <i className="bi bi-chevron-down dropdown-icon"></i>
                 <ul className="sub-menu">
                   <li>
-                    <a href="about.html">About</a>
+                    <Link to="about" onClick={handleCheck}>
+                      About
+                    </Link>
                   </li>
                   <li>
-                    <a href="team.html">Team</a>
+                    <Link to="team" onClick={handleCheck}>
+                      Team
+                    </Link>
                   </li>
                   <li>
-                    <a href="faq.html">Faq</a>
+                    <Link to="faq" onClick={handleCheck}>
+                      FAQ
+                    </Link>
                   </li>
                   <li>
-                    <a href="job-list.html">Job List</a>
-                  </li>
-                  <li>
-                    <a href="job-details.html">Career</a>
+                    <Link to="job-list" onClick={handleCheck}>
+                      Job List
+                    </Link>
                   </li>
                 </ul>
               </li>
@@ -65,7 +123,7 @@ const Header = () => {
                 <i className="bi bi-chevron-down dropdown-icon"></i>
                 <ul className="sub-menu">
                   <li>
-                    <a href="service.html">Services</a>
+                    <Link to="services">Services</Link>
                   </li>
                   <li>
                     <a href="service-details.html">Services Details</a>
@@ -73,16 +131,38 @@ const Header = () => {
                 </ul>
               </li>
               <li className="menu-item-has-children">
-                <a href="#" className="drop-down">
+                <Link
+                  to="projects"
+                  onClick={handleCheck}
+                  style={
+                    navCol == true ? { color: "black" } : { color: "white" }
+                  }
+                >
                   Projects
-                </a>
+                </Link>
                 <i className="bi bi-chevron-down dropdown-icon"></i>
                 <ul className="sub-menu">
                   <li>
-                    <a href="project.html">Projects</a>
+                    <Link
+                      to="projects"
+                      onClick={handleCheck}
+                      style={
+                        navCol == true ? { color: "white" } : { color: "black" }
+                      }
+                    >
+                      Projects
+                    </Link>
                   </li>
                   <li>
-                    <a href="project-details.html">Projects Details</a>
+                    <Link
+                      to="project-details"
+                      onClick={handleCheck}
+                      style={
+                        navCol == true ? { color: "white" } : { color: "black" }
+                      }
+                    >
+                      Projects Details
+                    </Link>
                   </li>
                 </ul>
               </li>
@@ -102,7 +182,15 @@ const Header = () => {
                 </ul>
               </li>
               <li>
-                <a href="contact.html">Contact us</a>
+                <Link
+                  to="contact"
+                  onClick={handleCheck}
+                  style={
+                    navCol == true ? { color: "black" } : { color: "white" }
+                  }
+                >
+                  Contact Us
+                </Link>
               </li>
             </ul>
           </div>
