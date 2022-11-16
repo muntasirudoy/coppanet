@@ -7,7 +7,7 @@ import img4 from "../assets/images/bg/rectangle-dot.svg";
 
 const Projects = () => {
   return (
-    <div className="portfolio-section5 position-relative pt-120 mt-[120px] pb-120">
+    <div className="portfolio-section5 position-relative pt-20 mt-[120px] pb-120">
       <img src={img4} className="rectangle-dot1" alt="image" />
       <img src={img4} className="rectangle-dot2" alt="image" />
       <Container>

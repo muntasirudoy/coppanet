@@ -3,18 +3,19 @@ import Button from "../components/Button";
 import Container from "../components/Container";
 import List from "../components/List";
 import { MenuItems } from "./helper";
-import logo from "../assets/logo-03.svg";
+import logo from "../assets/logo-01.svg";
 import "./layout.css";
+
 const btnText = {
   name: "Call Now",
   padding: "10px 25px",
 };
 const Header = () => {
   return (
-    <div className=" border">
+    <div className=" border z-50">
       <Container>
-        <header className="headers header-area style-4 style-5">
-          <div className="header-logo">
+        <header className="headers header-area style-4 style-5 z-50+">
+          <div className="header-logo flex items-center h-full">
             <a href="index.html">
               <img alt="Coppanet" src={logo} className="img-fluid" />
             </a>
@@ -32,9 +33,6 @@ const Header = () => {
             </div>
             <ul className="menu-list">
               <li className="menu-item-has-children">
-                <a href="#" className="drop-down">
-                  Home
-                </a>
                 <i className="bi bi-chevron-down dropdown-icon"></i>
               </li>
               <li className="menu-item-has-children">

@@ -1,6 +1,6 @@
 import React from "react";
 
-const MiniBanner = () => {
+const MiniBanner = ({ text1, text2, text3 }) => {
   return (
     <>
       <div className="inner-banner">
@@ -34,15 +34,15 @@ const MiniBanner = () => {
                 data-wow-duration="1.5s"
                 data-wow-delay=".2s"
               >
-                About Us
+                {text1}
               </h2>
               <nav aria-label="breadcrumb">
-                <ol className="breadcrumb gap-3">
+                <ol className="breadcrumb gap-3 flex">
                   <li className="breadcrumb-item">
-                    <a href="index.html">Home</a>
+                    <a href="index.html"> {text2}</a>
                   </li>
                   <li className="breadcrumb-item active" aria-current="page">
-                    About Us
+                    {text3}
                   </li>
                 </ol>
               </nav>

@@ -12,7 +12,7 @@ import img9 from "../assets/images/icons/time-prm2.svg";
 const Job = () => {
   return (
     <>
-      <div className="job-section pb-120">
+      <div className="job-section pb-20">
         <Container>
           <div className="row justify-content-center">
             <div className="col-md-6">

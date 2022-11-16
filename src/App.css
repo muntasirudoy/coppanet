@@ -2575,7 +2575,7 @@ header.style-4 .nav-right .search-btn .bi {
 }
 
 header.style-4 .header-logo img {
-    min-width: 160px;
+    min-width: 120px;
     max-width: 100%
 }
 
@@ -8903,11 +8903,11 @@ footer.style-5 .footer-bottom .f-bottom-list a:hover {
 .inner-banner {
     min-height: 500px;
     position: relative;
-    z-index: 9;
+    z-index: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("assets/images/bg/inner-banner.png")
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("assets/images/bg/aboutbg.jpg")
 }
 
 @media(min-width:1200px) and (max-width:1399px) {
@@ -9119,7 +9119,8 @@ footer.style-5 .footer-bottom .f-bottom-list a:hover {
     border-radius: 5px;
     padding: 15px;
     width: 100%;
-    transition: all .5s ease
+    transition: all .5s ease;
+    margin-top: 10px;
 }
 
 .form-inner input::placeholder,
@@ -9135,8 +9136,20 @@ footer.style-5 .footer-bottom .f-bottom-list a:hover {
     border: 1px solid var(--primary-color1)
 }
 
+.btn---submit {
+    background-color: var(--primary-color5) !important;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: poppins, sans-serif;
+    border: none;
+    outline: none;
+    padding: 15px 35px;
+    transition: all .5s ease
+}
+
 .btn--submit {
-    background-color: var(--primary-color1);
+    background-color: var(--primary-color5);
     color: var(--white);
     font-size: 18px;
     font-weight: 600;
@@ -9148,7 +9161,12 @@ footer.style-5 .footer-bottom .f-bottom-list a:hover {
 }
 
 .btn--submit:hover {
-    background-color: var(--text-color);
+    background-color: var(--primary-color1);
+    color: var(--white)
+}
+
+.btn---submit:hover {
+    background-color: var(--primary-color1);
     color: var(--white)
 }
 
@@ -9167,7 +9185,7 @@ footer.style-5 .footer-bottom .f-bottom-list a:hover {
 }
 
 .address-card:hover .content {
-    background: var(--primary-color1)
+    background: var(--primary-color5)
 }
 
 .address-card:hover .header h3 {

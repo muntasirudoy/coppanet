@@ -9,7 +9,7 @@ import img6 from "../../assets/images/bg/sponsor4.png";
 const Partner = () => {
   return (
     <>
-      <div className="sponsor-section pb-20 mt-20">
+      <div className="sponsor-section pb-20 mt-10">
         <Container>
           <div className="row align-items-center">
             <div className="col-md-6 d-flex justify-content-lg-start justify-content-center">

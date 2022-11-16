@@ -2,7 +2,7 @@ import React from "react";
 import img1 from "../assets/images/bg/section-bg1.png";
 import img2 from "../assets/images/bg/team31.png";
 import img3 from "../assets/images/bg/team32.png";
-import img4 from "../assets/images/bg/team33.png";
+import img4 from "../assets/images/bg/team1.jpg";
 import img5 from "../assets/images/bg/team34.png";
 import img6 from "../assets/images/bg/team35.png";
 import Container from "./Container";
@@ -25,13 +25,13 @@ const Team = () => {
             </div>
           </div>
           <div className="row flex justify-between gap-4">
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-10">
+            <div className="w-2/6">
               <div
                 className="single-team1 hover-border1 wow fadeInDown"
                 data-wow-duration="1.5s"
                 data-wow-delay="0.2s"
               >
-                <div className="team-image">
+                <div className="team-image h-[320px]">
                   <img src={img2} alt="image" />
                   <div className="social-area gap-3">
                     <div className="social-plus">
@@ -62,13 +62,13 @@ const Team = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-10">
+            <div className="w-2/6">
               <div
                 className="single-team1 hover-border1 wow fadeInDown"
                 data-wow-duration="1.5s"
                 data-wow-delay="0.4s"
               >
-                <div className="team-image">
+                <div className="team-image  h-[320px]">
                   <img src={img3} alt="image" />
                   <div className="social-area gap-3">
                     <div className="social-plus">
@@ -99,13 +99,13 @@ const Team = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-10">
+            <div className="w-2/6">
               <div
                 className="single-team1 hover-border1 wow fadeInDown"
                 data-wow-duration="1.5s"
                 data-wow-delay="0.6s"
               >
-                <div className="team-image">
+                <div className="team-image  h-[320px]">
                   <img src={img3} alt="image" />
                   <div className="social-area gap-3">
                     <div className="social-plus">
@@ -136,13 +136,13 @@ const Team = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-10">
+            <div className="w-2/6">
               <div
                 className="single-team1 hover-border1 wow fadeInDown"
                 data-wow-duration="1.5s"
                 data-wow-delay="0.8s"
               >
-                <div className="team-image">
+                <div className="team-image h-[320px]">
                   <img src={img4} alt="image" />
                   <div className="social-area gap-3">
                     <div className="social-plus">
