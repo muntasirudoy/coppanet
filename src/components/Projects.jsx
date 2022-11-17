@@ -12,7 +12,7 @@ const Projects = () => {
       <img src={img4} className="rectangle-dot2" alt="image" />
       <Container>
         <div className="row flex justify-center">
-          <div className="section-title primary5">
+          <div className="section-title primary5 w-2/4">
             <span>-Our Project-</span>
             <h3>Best Work Showcase</h3>
             <p className="mt-3">
@@ -23,7 +23,7 @@ const Projects = () => {
         </div>
         <div className="row position-relative justify-content-center">
           <div className="swiper  portfolio-slider1 swiper-fix">
-            <div className="swiper-wrapper flex justify-between">
+            <div className="swiper-wrapper flex gap-5 justify-between">
               <div className="swiper-slide">
                 <div
                   className="portfolio-item1 style-4 wow fadeInDown"

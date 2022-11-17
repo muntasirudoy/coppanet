@@ -59,12 +59,7 @@ const Job = () => {
                   <div className="eg-btn btn--primary2-light btn--sm">
                     1 Day Ago
                   </div>
-                  <a
-                    href="job-details.html"
-                    className="eg-btn btn--primary2 btn--sm"
-                  >
-                    Apply Now
-                  </a>
+                  <button className="button-87-1"> APPLY NOW</button>
                 </div>
               </div>
             </div>
@@ -102,12 +97,7 @@ const Job = () => {
                   <div className="eg-btn btn--primary2-light btn--sm">
                     2 Days Ago
                   </div>
-                  <a
-                    href="job-details.html"
-                    className="eg-btn btn--primary2 btn--sm"
-                  >
-                    Apply Now
-                  </a>
+                  <button className="button-87-1"> APPLY NOW</button>
                 </div>
               </div>
             </div>
@@ -142,15 +132,10 @@ const Job = () => {
                   </ul>
                 </div>
                 <div className="job-footer">
-                  <div className="eg-btn btn--primary2-light btn--sm">
+                  <div className="eg-btn btn--primary-light btn--sm">
                     3 Days Ago
                   </div>
-                  <a
-                    href="job-details.html"
-                    className="eg-btn btn--primary2 btn--sm"
-                  >
-                    Apply Now
-                  </a>
+                  <button className="button-87-1"> APPLY NOW</button>
                 </div>
               </div>
             </div>

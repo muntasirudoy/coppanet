@@ -16,12 +16,7 @@ const JoinUs = () => {
                 <h2>We're Always Looking For Talented People Our Agency.</h2>
               </div>
               <div className="col-lg-5 d-flex justify-content-lg-end justify-content-center">
-                <a
-                  href="contact.html"
-                  className="eg-btn btn--primary5 capsule joinus-btn"
-                >
-                  Join Us
-                </a>
+                <button className="button-87"> JOIN US</button>
               </div>
             </div>
           </div>

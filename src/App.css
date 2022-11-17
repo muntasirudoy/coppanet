@@ -5928,7 +5928,7 @@ header.style-4.style-5 .main-nav ul li ul.sub-menu>li a.active {
 
 .portfolio-item1 {
     width: 100%;
-    max-width: 420px;
+    width: 400px;
     margin-left: auto;
     margin-right: auto
 }
@@ -5938,7 +5938,8 @@ header.style-4.style-5 .main-nav ul li ul.sub-menu>li a.active {
 }
 
 .portfolio-item1 .portfolio-img {
-    overflow: hidden
+    overflow: hidden;
+    height: 380px;
 }
 
 .portfolio-item1 .portfolio-img img {
@@ -6032,7 +6033,7 @@ header.style-4.style-5 .main-nav ul li ul.sub-menu>li a.active {
     margin-top: -80px;
     z-index: 1;
     position: relative;
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px
@@ -10525,4 +10526,132 @@ ul.blog-details-list li::after {
 
 .commetn-area .comment-list .content .reply .bi {
     margin-left: 5px
+}
+
+
+.button-86 {
+    all: unset;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    position: relative;
+    color: #f0f0f0;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-86::after,
+.button-86::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -99999;
+    transition: all .4s;
+}
+
+.button-86::before {
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 100%;
+    background: #28282d;
+    border-radius: 10px;
+}
+
+.button-86::after {
+    transform: translate(10px, 10px);
+    width: 35px;
+    height: 35px;
+    background: #ffffff15;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 50px;
+}
+
+.button-86:hover::before {
+    transform: translate(5%, 20%);
+    width: 110%;
+    height: 110%;
+}
+
+.button-86:hover::after {
+    border-radius: 10px;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+}
+
+.button-86:active::after {
+    transition: 0s;
+    transform: translate(0, 5%);
+}
+
+.button-86-2::before {
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+}
+
+/* CSS */
+.button-87 {
+    margin: 10px;
+    padding: 12px 25px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    border: 0px;
+    font-weight: 600;
+    box-shadow: 0px 0px 14px -7px #f09819;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+
+.button-87-1 {
+    margin: 10px;
+    padding: 6px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 25px;
+    display: block;
+    border: 0px;
+    font-weight: 400;
+    font-size: 14px;
+    box-shadow: 0px 0px 14px -7px #f09819;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+
+
+.button-87:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.button-87:active {
+    transform: scale(0.95);
 }

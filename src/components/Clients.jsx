@@ -2,7 +2,8 @@ import React from "react";
 import Container from "./Container";
 import img1 from "../assets/images/bg/client21.png";
 import img2 from "../assets/images/icons/quote4.svg";
-
+import CountUp from "react-countup";
+import VisibilitySensor from "react-visibility-sensor";
 const Clients = () => {
   return (
     <>
@@ -88,7 +89,14 @@ const Clients = () => {
                     >
                       <div className="coundown">
                         <h2 className="odometer" data-odometer-final="450">
-                          +26
+                          <CountUp end={60} redraw={true}>
+                            {({ countUpRef, start }) => (
+                              <VisibilitySensor onChange={start} delayedCall>
+                                <span ref={countUpRef} />
+                              </VisibilitySensor>
+                            )}
+                          </CountUp>
+                          +
                         </h2>
                         <span>{/* <i className="bx bx-plus"></i> */}</span>
                         <br />
@@ -104,7 +112,14 @@ const Clients = () => {
                     >
                       <div className="coundown">
                         <h2 className="odometer" data-odometer-final="50">
-                          &nbsp; +56
+                          <CountUp end={100} redraw={true}>
+                            {({ countUpRef, start }) => (
+                              <VisibilitySensor onChange={start} delayedCall>
+                                <span ref={countUpRef} />
+                              </VisibilitySensor>
+                            )}
+                          </CountUp>
+                          +
                         </h2>
                         <span>{/* <i className="bx bx-plus"></i> */}</span>{" "}
                         <br />
@@ -120,7 +135,14 @@ const Clients = () => {
                     >
                       <div className="coundown">
                         <h2 className="odometer" data-odometer-final="963">
-                          +125
+                          <CountUp end={120} redraw={true}>
+                            {({ countUpRef, start }) => (
+                              <VisibilitySensor onChange={start} delayedCall>
+                                <span ref={countUpRef} />
+                              </VisibilitySensor>
+                            )}
+                          </CountUp>
+                          +
                         </h2>
                         <br />
                         <a href="#">Success</a>
@@ -135,7 +157,13 @@ const Clients = () => {
                     >
                       <div className="coundown">
                         <h2 className="odometer" data-odometer-final="50">
-                          20
+                          <CountUp end={20} redraw={true}>
+                            {({ countUpRef, start }) => (
+                              <VisibilitySensor onChange={start} delayedCall>
+                                <span ref={countUpRef} />
+                              </VisibilitySensor>
+                            )}
+                          </CountUp>
                         </h2>
                         <span>{/* <i className="bx bx-plus"></i> */}</span>{" "}
                         <br />

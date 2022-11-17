@@ -1,6 +1,6 @@
 import React from "react";
 import MiniBanner from "../../components/MiniBanner";
-import img1 from "../../assets/images/bg/proj-details.png";
+import img1 from "../../assets/images/bg/proj-details.jpg";
 import img2 from "../../assets/images/icons/client-icon.svg";
 import img3 from "../../assets/images/icons/category-icon.svg";
 import img4 from "../../assets/images/icons/calendar2.svg";
@@ -29,7 +29,7 @@ export const ProjectDetails = () => {
                     </div>
                     <div class="text">
                       <h5>Client Name</h5>
-                      <p>Sara Watson</p>
+                      <p>Oneworld</p>
                     </div>
                   </li>
                   <li>
@@ -38,7 +38,7 @@ export const ProjectDetails = () => {
                     </div>
                     <div class="text">
                       <h5>Category</h5>
-                      <p>Branding, Ui/Ux</p>
+                      <p>Health care</p>
                     </div>
                   </li>
                   <li>
@@ -47,21 +47,21 @@ export const ProjectDetails = () => {
                     </div>
                     <div class="text">
                       <h5>Complete Date</h5>
-                      <p>25 January 2022</p>
+                      <p>25 June 2022</p>
                     </div>
                   </li>
                 </ul>
                 <h4>
-                  The UX design process consists user research, wireframing and
-                  prototyping, and user testing.
+                  Soowgood is healthcare platform that aims to bridge the gap
+                  between healthcare professionals and patients
                 </h4>
                 <p class="para">
-                  Let’s imagine an e-commerce startup—we’ll call it Beautify.
-                  Beautify creates their own all-natural cosmetics and sells
-                  them online via their website. Some of the key team members
-                  behind this small but successful startup include a UX
-                  designer, a UI designer, a web developer, a data analyst, and
-                  a digital marketer.
+                  Soowgood is healthcare platform that aims to bridge the gap
+                  between healthcare professionals and patients, giving them the
+                  maximum point of contact with the doctors. The platform also
+                  aims on providing efficiency in their day- to-day practice for
+                  the providers and the convenience of scheduling appointment
+                  for their patients.
                 </p>
                 <div class="challenge-box">
                   <h4>Challenge During The Project</h4>
@@ -97,7 +97,9 @@ export const ProjectDetails = () => {
               <div class="proj-details-right">
                 <div class="title-area">
                   <span>Ui/Ux Design</span>
-                  <h2>Creative Ui/Ux Design for Your Business.</h2>
+                  <h2>
+                    Creative Ui/Ux Design for Your Health Care Online Platform
+                  </h2>
                 </div>
                 <p class="para">
                   When it comes to the tech industry, there are many different

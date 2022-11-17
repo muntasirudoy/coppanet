@@ -44,7 +44,7 @@ const Banner = ({ bannerText }) => {
         <img src={img4} class="banner5-vector-left img-fluid" alt="image" />
         <img src={img5} class="banner5-vector img-fluid" alt="image" />
         <Container>
-          <div class="row w-full pt-[50px] flex justify-between items-center">
+          <div class="row w-full  flex justify-between items-center">
             <div class="w-[60%]">
               <div
                 class="banner-content style-3  wow fadeInLeft"
@@ -65,18 +65,8 @@ const Banner = ({ bannerText }) => {
                   recommendation systems for maximum user-friendliness.
                 </p>
                 <div class="button-group gap-4">
-                  <a
-                    href="about.html"
-                    class="eg-btn btn--primary5 capsule btn--lg"
-                  >
-                    Learn More
-                  </a>
-                  <a
-                    href="contact.html"
-                    class="eg-btn btn--primary5 capsule btn--outline btn--lg"
-                  >
-                    Get In Touch
-                  </a>
+                  <button className="button-86">Learn More</button>
+                  <button className="button-86 button-86-2">Contact</button>
                 </div>
               </div>
             </div>

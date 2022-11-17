@@ -8,6 +8,7 @@
     background: rgba(255, 255, 255, 0.864);
     transition: 0.5s;
     animation: 1000ms ease-in-out 3s normal none 1 running fadeInDown;
-    padding: 0 100px;
+    padding: 0 50px;
     backdrop-filter: blur(40px);
+
 }

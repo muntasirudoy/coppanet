@@ -25,9 +25,10 @@ const About = () => {
                   your businesses
                 </h4>
                 <p className="para">
-                  Lorem Ipsum is simply dummy text of free available in market
-                  the way printing and typesetting industry has been the
-                  industry's standard dummy text ever.
+                  We develop mobile application platforms across different
+                  sectors including Healthcare, Travel and Tourism, Fintech and
+                  E-Commerce. We implement state of the art machine learning and
+                  recommendation systems for maximum user-friendliness.
                 </p>
                 <ul className="about3-list style-2">
                   <li>Price of additional materials or parts (if needed)</li>
@@ -35,12 +36,7 @@ const About = () => {
                   <li>Interpreting services is our specialty</li>
                 </ul>
                 <div className="about-footer d-flex jusify-content-start align-items-center flex-wrap gap-4">
-                  <a
-                    href="about.html"
-                    className="eg-btn btn--primary2 capsule btn--lg"
-                  >
-                    MORE ABOUT
-                  </a>
+                  <button className="button-87"> MORE ABOUT</button>
                   <div className="experience flex mt-7 align-items-center">
                     <svg
                       width="44"
