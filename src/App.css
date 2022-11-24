@@ -10,7 +10,7 @@
     --primary-color4: rgb(39, 174, 96);
     --primary-opcaity4: rgba(39, 174, 96, 0.1);
     --primary-color4-light: #F6FFFC;
-    --primary-color5: rgb(254, 140, 98);
+    --primary-color5: #f89973;
     --primary-opcaity5: rgba(255, 76, 76, 0.1);
     --primary-color6: rgb(47, 128, 237);
     --primary-opcaity6: rgba(47, 128, 237, 0.1);
@@ -68,7 +68,8 @@ html {
 }
 
 body {
-    font-family: poppins, sans-serif
+    font-family: poppins, sans-serif;
+    overflow-x: hidden;
 }
 
 a {
@@ -2631,7 +2632,7 @@ header.style-4 .main-nav ul li {
 header.style-4 .main-nav ul li a {
     font-size: 16px;
     font-weight: 500;
-    color: var(--text-color);
+    color: black;
     display: block;
     text-transform: capitalize;
     padding: 30px 0;
@@ -4273,7 +4274,7 @@ header.style-4.style-5 .main-nav ul li ul.sub-menu>li a.active {
     background-image: url(assets/images/bg/banner5-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 90vh;
+    min-height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -5928,9 +5929,13 @@ header.style-4.style-5 .main-nav ul li ul.sub-menu>li a.active {
 
 .portfolio-item1 {
     width: 100%;
-    width: 400px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto
+}
+
+.portfolio-slider1 .swiper-slide {
+    width: 25%;
 }
 
 .portfolio-item1:hover .portfolio-img img {
@@ -5950,32 +5955,33 @@ header.style-4.style-5 .main-nav ul li ul.sub-menu>li a.active {
 .portfolio-item1 .portfolio-content {
     padding: 30px 25px;
     background: var(--white);
-    box-shadow: 3px 0 10px rgba(136, 136, 136, .1);
-    border-radius: 0 0 5px 5px
+    box-shadow: 0px -10px 15px rgba(136, 136, 136, .1);
+    border-radius: 0 0 5px 5px;
+    justify-content: center;
 }
 
 .portfolio-item1 .portfolio-content svg {
-    margin-left: 5px
+    margin-left: 10px
 }
 
 .portfolio-item1 .portfolio-content span {
     font-size: 16px;
     font-weight: 500;
     color: var(--primary-color1);
-    display: inline-block;
-    margin-bottom: 8px
+    display: inline-flex;
+    align-items: center;
 }
 
 .portfolio-item1 .portfolio-content h4 {
-    margin-bottom: 15px
+    margin-bottom: 5px
 }
 
 .portfolio-item1 .portfolio-content h4 a {
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 700;
     color: #18212e;
     margin-bottom: 10px;
-    font-family: cuprum, sans-serif
+
 }
 
 .portfolio-item1 .portfolio-content>a {
@@ -6036,12 +6042,16 @@ header.style-4.style-5 .main-nav ul li ul.sub-menu>li a.active {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 10px
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    height: 145px;
 }
 
 .portfolio-item1.style-4 .portfolio-content span {
     color: var(--primary-color5);
-    margin-bottom: 4px
+    margin-bottom: 4px;
+
+
 }
 
 .dot-squire {
@@ -6458,7 +6468,8 @@ header.style-4.style-5 .main-nav ul li ul.sub-menu>li a.active {
 
 .single-team1 .team-image img {
     width: 100%;
-    transition: all .65s ease
+    transition: all .65s ease;
+    height: 100%;
 }
 
 .single-team1 .team-image .social-area {
@@ -10597,7 +10608,7 @@ ul.blog-details-list li::after {
 }
 
 .button-86-2::before {
-    background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    background-image: linear-gradient(45deg, #f89973 0%, #F09819 51%, #f89973 100%);
 }
 
 /* CSS */
@@ -10614,7 +10625,7 @@ ul.blog-details-list li::after {
     border: 0px;
     font-weight: 600;
     box-shadow: 0px 0px 14px -7px #f09819;
-    background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    background-image: linear-gradient(45deg, #f89973 0%, #F09819 51%, #f89973 100%);
     cursor: pointer;
     user-select: none;
     -webkit-user-select: none;
@@ -10635,8 +10646,8 @@ ul.blog-details-list li::after {
     border: 0px;
     font-weight: 400;
     font-size: 14px;
-    box-shadow: 0px 0px 14px -7px #f09819;
-    background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    box-shadow: 0px 0px 14px -7px #f89973;
+    background-image: linear-gradient(45deg, #f89973 0%, #F09819 51%, #f89973 100%);
     cursor: pointer;
     user-select: none;
     -webkit-user-select: none;
@@ -10654,4 +10665,88 @@ ul.blog-details-list li::after {
 
 .button-87:active {
     transform: scale(0.95);
+}
+
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #f89973;
+    transform-origin: 0%;
+    z-index: 99999;
+}
+
+.icon-box {
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+
+.icon-box i {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+
+}
+
+.swiper-button-prev {
+    background: var(--primary-color5);
+    padding: 20px;
+
+    top: 40%;
+    left: 0;
+}
+
+.swiper-button-prev::after {
+    color: #000;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+
+.swiper-button-next {
+    background: var(--primary-color5);
+    padding: 20px;
+    top: 40%;
+    right: 0;
+}
+
+.swiper-button-next::after {
+    color: #000;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.testimonial-area .swiper-button-prev {
+    background: var(--primary-color5);
+    padding: 20px;
+    top: 92%;
+    left: 40%;
+}
+
+.testimonial-area .swiper-button-prev::after {
+    color: #000;
+    font-weight: 800;
+    font-size: 21px;
+}
+
+.testimonial-area .swiper-button-next {
+    background: var(--primary-color5);
+    padding: 20px;
+    top: 92%;
+    right: 40%;
+}
+
+.testimonial-area .swiper-button-next::after {
+    color: #000;
+    font-weight: 800;
+    font-size: 21px;
+}
+
+.swiper-initialized {
+    padding: 0 !important;
 }

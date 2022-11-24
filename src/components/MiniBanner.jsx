@@ -3,7 +3,7 @@ import React from "react";
 const MiniBanner = ({ text1, text2, text3 }) => {
   return (
     <>
-      <div className="inner-banner">
+      <div className="inner-banner mt-[90px]">
         <img
           src="assets/images/bg/inner-bannerdot.png"
           className="inner-bannerdot"

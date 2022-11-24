@@ -2,39 +2,107 @@ import React from "react";
 import img1 from "../assets/images/bg/about2-vector.png";
 import img2 from "../assets/images/bg/about2-bg.png";
 import Container from "./Container";
+import { motion, useInView, useMotionValue, useTransform } from "framer-motion";
+
+const item = {
+  hidden: { y: -50, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
+  transition: {
+    delayChildren: 0.1,
+    staggerChildren: 0.1,
+  },
+};
+
+const container = {
+  hidden: { opacity: 0, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.1,
+      staggerChildren: 0.1,
+    },
+  },
+};
+
 const About = () => {
   return (
     <>
-      <div className="about-section2 pt-120 flex justify-between">
+      <div className="about-section2 pt-120 flex justify-between overflow-hidden">
         <img src={img1} alt="image" className="about2-vector img-fluid " />
         <Container>
           <div className="row w-full flex gap-12 gy-5 justify-between">
-            <div className="w-2/4 pe-0 text-xl-start text-center">
+            <motion.div
+              initial={{ x: -400 }}
+              whileInView={{ x: 0 }}
+              transition={{ duration: 0.5 }}
+              className="w-2/4 pe-0 text-xl-start text-center"
+            >
               <img src={img2} alt="image" className="img-fluid" />
-            </div>
+            </motion.div>
+
             <div className="w-2/4 flex justify-content-xl-start justify-content-center">
               <div
                 className="about3-content style-4 wow fadeInRight"
                 data-wow-duration="1.5s"
                 data-wow-delay=".2s"
               >
-                <span>-About Our Company-</span>
-                <h3>Software solution with omnichannel possibilities</h3>
-                <h4>
-                  We’re committed to delivering the best software solution for
-                  your businesses
-                </h4>
-                <p className="para">
-                  We develop mobile application platforms across different
-                  sectors including Healthcare, Travel and Tourism, Fintech and
-                  E-Commerce. We implement state of the art machine learning and
-                  recommendation systems for maximum user-friendliness.
-                </p>
-                <ul className="about3-list style-2">
-                  <li>Price of additional materials or parts (if needed)</li>
-                  <li>Transportation cost for carrying new materials/parts</li>
-                  <li>Interpreting services is our specialty</li>
-                </ul>
+                <motion.div
+                  initial={{ x: 400 }}
+                  whileInView={{ x: 0 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <motion.p>
+                    <span>-About Our Company-</span>
+                  </motion.p>
+                  <motion.h3>
+                    Software solution with omnichannel possibilities
+                  </motion.h3>
+                  <motion.h4>
+                    We’re committed to delivering the best software solution for
+                    your businesses
+                  </motion.h4>
+                  <motion.p className="para">
+                    We develop mobile application platforms across different
+                    sectors including Healthcare, Travel and Tourism, Fintech
+                    and E-Commerce. We implement state of the art machine
+                    learning and recommendation systems for maximum
+                    user-friendliness.
+                  </motion.p>
+                </motion.div>
+
+                <motion.ul
+                  className="about3-list style-2"
+                  variants={container}
+                  initial="hidden"
+                  whileInView="visible"
+                >
+                  <motion.li
+                    initial={{ y: -50, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 0.3, duration: 0.3 }}
+                  >
+                    Price of additional materials or parts (if needed)
+                  </motion.li>
+                  <motion.li
+                    initial={{ y: -50, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 0.4, duration: 0.3 }}
+                  >
+                    Transportation cost for carrying new materials/parts
+                  </motion.li>
+                  <motion.li
+                    initial={{ y: -50, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 0.5, duration: 0.3 }}
+                  >
+                    Interpreting services is our specialty
+                  </motion.li>
+                </motion.ul>
+
                 <div className="about-footer d-flex jusify-content-start align-items-center flex-wrap gap-4">
                   <button className="button-87"> MORE ABOUT</button>
                   <div className="experience flex mt-7 align-items-center">

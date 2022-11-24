@@ -9,7 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "boxicons": "^2.1.4",
     "flowbite": "^1.5.4",
+    "framer-motion": "^7.6.9",
+    "popmotion": "^11.0.5",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-best-tabs": "^1.3.3",
@@ -17,7 +20,8 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.6.0",
     "react-router-dom": "^6.0.0",
-    "react-visibility-sensor": "^5.1.1"
+    "react-visibility-sensor": "^5.1.1",
+    "swiper": "^8.4.5"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",

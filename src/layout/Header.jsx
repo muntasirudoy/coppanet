@@ -12,6 +12,8 @@ import { useLocation } from "react-router-dom";
 const Header = () => {
   const location = useLocation().pathname;
   const [sticky, setSticky] = useState(false);
+
+  
   useEffect(() => {
     window.addEventListener("scroll", isSticky);
     return () => {
@@ -32,13 +34,15 @@ const Header = () => {
     }
   };
 
+  console.log(location);
+
   return (
-    <div className="headTop z-50 ">
+    <div className="headTop z-50 absolute top-0 w-full">
       <div className=" px-[100px]">
         <header className="headers header-area style-4 style-5 z-50+">
           <div className="header-logo flex items-center h-full">
             <a href="/">
-              <img alt="Coppanet" src={logo} className="img-fluid" />
+              <img alt="Coppanet" src={ location == "/" ? logo && sticky ? logo : logo :logo } className="img-fluid" />
             </a>
           </div>
           <div className="main-nav">
@@ -60,7 +64,7 @@ const Header = () => {
                 <i className="bi bi-chevron-down dropdown-icon"></i>
               </li>
               <li className="menu-item-has-children">
-                <a href="/" className="drop-down">
+                <a className="drop-down">
                   Company
                 </a>
                 <i className="bi bi-chevron-down dropdown-icon"></i>
@@ -79,46 +83,16 @@ const Header = () => {
                   </li>
                 </ul>
               </li>
-              <li className="menu-item-has-children">
-                <a href="/" className="drop-down">
-                  Services
-                </a>
-                <i className="bi bi-chevron-down dropdown-icon"></i>
-                <ul className="sub-menu">
-                  <li>
-                    <Link to="services">Services</Link>
-                  </li>
-                  <li>
-                    <a href="\">Services Details</a>
-                  </li>
-                </ul>
-              </li>
+              
               <li className="menu-item-has-children">
                 <Link to="projects">Projects</Link>
                 <i className="bi bi-chevron-down dropdown-icon"></i>
-                <ul className="sub-menu">
-                  <li>
-                    <Link to="projects">Projects</Link>
-                  </li>
-                  <li>
-                    <Link to="project-details">Projects Details</Link>
-                  </li>
-                </ul>
+                
               </li>
               <li className="menu-item-has-children">
-                <a href="blog-grid.html">Blog</a>
+                <Link to="blog">Blog</Link>
                 <i className="bi bi-chevron-down dropdown-icon"></i>
-                <ul className="sub-menu">
-                  <li>
-                    <a href="blog-grid.html">Blog Grid</a>
-                  </li>
-                  <li>
-                    <a href="blog-standard.html">Blog Standard</a>
-                  </li>
-                  <li>
-                    <a href="blog-details.html">Blog details</a>
-                  </li>
-                </ul>
+                
               </li>
               <li>
                 <Link to="contact">Contact Us</Link>
@@ -141,26 +115,6 @@ const Header = () => {
   );
 };
 
-const blackAncor = {
-  fontSize: "16px",
-  fontWeight: 500,
-  color: "rgb(40, 40, 40);",
-  display: "block",
-  textTransform: "capitalize",
-  padding: "30px 0",
-  position: "relative",
-  transition: "all .5s ease-out 0s",
-};
 
-const whiteAncor = {
-  fontSize: "16px",
-  fontWeight: 500,
-  color: "white",
-  display: "block",
-  textTransform: "capitalize",
-  padding: "30px 0",
-  position: "relative",
-  transition: "all .5s ease-out 0s",
-};
 
 export default Header;

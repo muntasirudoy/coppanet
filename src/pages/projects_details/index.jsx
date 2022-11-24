@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import MiniBanner from "../../components/MiniBanner";
 import img1 from "../../assets/images/bg/proj-details.jpg";
 import img2 from "../../assets/images/icons/client-icon.svg";
@@ -8,7 +8,31 @@ import img5 from "../../assets/images/bg/project-d1.png";
 import img6 from "../../assets/images/bg/project-d2.png";
 import img7 from "../../assets/images/bg/testi11.png";
 import Container from "../../components/Container";
+import { Routes, Route, useParams } from "react-router-dom";
+import projectdetails from "../../assets/projects.json";
 export const ProjectDetails = () => {
+  const param = useParams();
+  const [details, setDetails] = useState("");
+  useEffect(() => {
+    const data = projectdetails.find((e) => e.id == param.id);
+    setDetails(data);
+  });
+
+  const {
+    clientsName,
+    appNme,
+    category,
+    completeDate,
+    paraOne,
+    paraTwo,
+    paraThree,
+    paraFour,
+    headinOne,
+    subHeadinOne,
+    headinTwo,
+    headinThree,
+    headinFour,
+  } = details;
   return (
     <>
       <MiniBanner
@@ -19,7 +43,7 @@ export const ProjectDetails = () => {
       <div class="project-details-section pt-120 pb-20" id="project-details">
         <Container>
           <div class="row flex justify-center gap-5">
-            <div class="col-lg-7">
+            <div class="w-[65%]">
               <div class="proj-details-single">
                 <img src={img1} alt="image" class="img-fluid" />
                 <ul class="project-meta-list gap-3">
@@ -29,7 +53,7 @@ export const ProjectDetails = () => {
                     </div>
                     <div class="text">
                       <h5>Client Name</h5>
-                      <p>Oneworld</p>
+                      <p>{clientsName}</p>
                     </div>
                   </li>
                   <li>
@@ -38,7 +62,7 @@ export const ProjectDetails = () => {
                     </div>
                     <div class="text">
                       <h5>Category</h5>
-                      <p>Health care</p>
+                      <p>{category}</p>
                     </div>
                   </li>
                   <li>
@@ -47,30 +71,15 @@ export const ProjectDetails = () => {
                     </div>
                     <div class="text">
                       <h5>Complete Date</h5>
-                      <p>25 June 2022</p>
+                      <p>{completeDate}</p>
                     </div>
                   </li>
                 </ul>
-                <h4>
-                  Soowgood is healthcare platform that aims to bridge the gap
-                  between healthcare professionals and patients
-                </h4>
-                <p class="para">
-                  Soowgood is healthcare platform that aims to bridge the gap
-                  between healthcare professionals and patients, giving them the
-                  maximum point of contact with the doctors. The platform also
-                  aims on providing efficiency in their day- to-day practice for
-                  the providers and the convenience of scheduling appointment
-                  for their patients.
-                </p>
+                <h4>{headinOne}</h4>
+                <p class="para">{paraOne}</p>
                 <div class="challenge-box">
-                  <h4>Challenge During The Project</h4>
-                  <p class="para">
-                    Quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                    ea commod conse quat. Duis aute irure dolor in repreh
-                    enderit in voluptate velit esse cillum dolore education
-                    level of volatility.
-                  </p>
+                  <h4>{headinThree}</h4>
+                  <p class="para">{paraThree}</p>
                   <ul class="challenge-list">
                     <li>
                       Analyzing research data and identifying trends and
@@ -83,35 +92,17 @@ export const ProjectDetails = () => {
                     </li>
                   </ul>
                 </div>
-                <h4>How Works It?</h4>
-                <p class="para mb-0">
-                  Ompanies and investors grapple with changing conditions
-                  constantly, but our re search points to an unusual level of
-                  volatility in the decades ahead. To understand why, we look at
-                  the three major forces that will shape the 2020.with changing
-                  conditions constantly.
-                </p>
+                <h4>{headinFour}</h4>
+                <p class="para mb-0">{paraFour}</p>
               </div>
             </div>
-            <div class="col-lg-5">
+            <div class="w-[35%]">
               <div class="proj-details-right">
                 <div class="title-area">
                   <span>Ui/Ux Design</span>
-                  <h2>
-                    Creative Ui/Ux Design for Your Health Care Online Platform
-                  </h2>
+                  <h2>{headinTwo}</h2>
                 </div>
-                <p class="para">
-                  When it comes to the tech industry, there are many different
-                  paths you can follow. UX design, UI design, web development,
-                  data analytics, and digital marketing UX design, UI design all
-                  offer exciting, fulfilling.
-                </p>
-                <p class="para">
-                  Quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commod consequat. Duis aute irure dolor in repreh enderit
-                  in voluptate velit esse cillum dolore eu
-                </p>
+                <p class="para">{paraTwo}</p>
                 <div class="proj-details-imgs">
                   <div class="row flex gap-4">
                     <div class="col-lg-6 col-md-6 col-sm-6 text-center">

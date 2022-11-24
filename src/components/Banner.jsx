@@ -13,7 +13,7 @@ import Container from "./Container";
 const Banner = ({ bannerText }) => {
   return (
     <>
-      <div class="banner-section5">
+      <div class="banner-section5 py-16">
         <ul class="banner-social style-2 gap-4">
           <li>
             <a href="https://www.facebook.com/">
@@ -44,7 +44,7 @@ const Banner = ({ bannerText }) => {
         <img src={img4} class="banner5-vector-left img-fluid" alt="image" />
         <img src={img5} class="banner5-vector img-fluid" alt="image" />
         <Container>
-          <div class="row w-full  flex justify-between items-center">
+          <div class="row w-full flex justify-between items-center">
             <div class="w-[60%]">
               <div
                 class="banner-content style-3  wow fadeInLeft"

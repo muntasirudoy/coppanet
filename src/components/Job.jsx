@@ -9,136 +9,69 @@ import img6 from "../assets/images/icons/time-prm2.svg";
 import img7 from "../assets/images/icons/job-icon3.svg";
 import img8 from "../assets/images/icons/location-prm2.svg";
 import img9 from "../assets/images/icons/time-prm2.svg";
+import JobCard from "./JobCard";
+import { motion } from "framer-motion";
+import TitleFive from "./TitleFive";
 const Job = () => {
   return (
     <>
       <div className="job-section pb-20">
         <Container>
           <div className="row justify-content-center">
-            <div className="col-md-6">
-              <div className="section-title2 primary5">
-                <span>- Our Jobs-</span>
-                <div>
-                  <h3>Our Recent Job Post</h3>
-                </div>
-              </div>
+            <div className="flex justify-center">
+              <TitleFive
+                heading="Our Recent Job Post"
+                subheading="- Our Jobs-"
+                para=" "
+              />
             </div>
           </div>
-          <div className="row flex justify-between gap-4">
-            <div className="col-lg-4 col-md-6 col-sm-10">
-              <div
-                className="jobpost-item hover-border2 wow fadeInDown"
-                data-wow-duration="1.5s"
-                data-wow-delay="0.2s"
-              >
-                <div className="job-header">
-                  <div className="icon">
-                    <img src={img1} alt="image" />
-                  </div>
-                  <h4 className="title">
-                    <a href="job-details.html">Full-Stack Developer Wanted</a>
-                  </h4>
-                </div>
-                <div className="job-body">
-                  <p className="para">
-                    We’re hiring Want craft the best Full-Stack Developer job
-                    vacancy or hiring post? Get inspired by these examples.
-                  </p>
-                  <ul className="job-meta">
-                    <li className=" flex">
-                      <img src={img2} alt="image" />
-                      London, UK
-                    </li>
-                    <li className=" flex">
-                      <img src={img3} alt="image" />
-                      Full Time
-                    </li>
-                  </ul>
-                </div>
-                <div className="job-footer">
-                  <div className="eg-btn btn--primary2-light btn--sm">
-                    1 Day Ago
-                  </div>
-                  <button className="button-87-1"> APPLY NOW</button>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-10">
-              <div
-                className="jobpost-item hover-border2 wow fadeInDown"
-                data-wow-duration="1.5s"
-                data-wow-delay="0.2s"
-              >
-                <div className="job-header">
-                  <div className="icon">
-                    <img src={img4} alt="image" />
-                  </div>
-                  <h4 className="title">
-                    <a href="job-details.html">Frontend Developer</a>
-                  </h4>
-                </div>
-                <div className="job-body">
-                  <p className="para">
-                    We’re hiring Want craft the best social media job vacancy or
-                    hiring post? Get inspired by these examples.
-                  </p>
-                  <ul className="job-meta">
-                    <li className=" flex">
-                      <img src={img5} alt="image" />
-                      London, UK
-                    </li>
-                    <li className=" flex">
-                      <img src={img6} alt="image" />
-                      Full Time
-                    </li>
-                  </ul>
-                </div>
-                <div className="job-footer">
-                  <div className="eg-btn btn--primary2-light btn--sm">
-                    2 Days Ago
-                  </div>
-                  <button className="button-87-1"> APPLY NOW</button>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-10">
-              <div
-                className="jobpost-item hover-border5 wow fadeInDown"
-                data-wow-duration="1.5s"
-                data-wow-delay="0.2s"
-              >
-                <div className="job-header">
-                  <div className="icon">
-                    <img src={img7} alt="image" />
-                  </div>
-                  <h4 className="title">
-                    <a href="job-details.html">WordPress Developer</a>
-                  </h4>
-                </div>
-                <div className="job-body">
-                  <p className="para">
-                    We’re hiring Want craft the best social media job vacancy or
-                    hiring post? Get inspired by these examples.
-                  </p>
-                  <ul className="job-meta">
-                    <li className=" flex">
-                      <img src={img8} alt="image" />
-                      London, UK
-                    </li>
-                    <li className=" flex">
-                      <img src={img9} alt="image" />
-                      Full Time
-                    </li>
-                  </ul>
-                </div>
-                <div className="job-footer">
-                  <div className="eg-btn btn--primary-light btn--sm">
-                    3 Days Ago
-                  </div>
-                  <button className="button-87-1"> APPLY NOW</button>
-                </div>
-              </div>
-            </div>
+          <div className="row flex justify-between gap-6">
+            <motion.div
+              initial={{ opacity: 0, y: -100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ bounce: 2, duration: 0.4, delay: 0.3 }}
+              viewport={{ amount: 0.5 }}
+            >
+              <JobCard
+                para="We’re hiring Want craft the best Full-Stack Developer job vacancy or
+            hiring post? Get inspired by these examples."
+                location=" London, UK"
+                time="Full Time"
+                leftTime="1 Day Ago"
+                title="Full-Stack Developer Wanted"
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: -100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ bounce: 2, duration: 0.4, delay: 0.4 }}
+              viewport={{ amount: 1 }}
+            >
+              <JobCard
+                para="We’re hiring Want craft the best Full-Stack Developer job vacancy or
+            hiring post? Get inspired by these examples."
+                location=" London, UK"
+                time="Full Time"
+                leftTime="1 Day Ago"
+                title="Full-Stack Developer Wanted"
+              />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: -100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ bounce: 2, duration: 0.4, delay: 0.5 }}
+              viewport={{ amount: 1 }}
+            >
+              <JobCard
+                para="We’re hiring Want craft the best Full-Stack Developer job vacancy or
+            hiring post? Get inspired by these examples."
+                location=" London, UK"
+                time="Full Time"
+                leftTime="1 Day Ago"
+                title="Full-Stack Developer Wanted"
+              />
+            </motion.div>
           </div>
         </Container>
       </div>

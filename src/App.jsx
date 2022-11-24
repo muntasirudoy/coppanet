@@ -10,6 +10,7 @@ import OurProjects from "./pages/our_projects";
 import { ProjectDetails } from "./pages/projects_details";
 import Contact from "./pages/contact";
 import { Route, Routes } from "react-router-dom";
+import Blog from "./pages/blog";
 
 function App() {
   return (
@@ -23,8 +24,9 @@ function App() {
           <Route path="/faq" element={<Faq />} />
           <Route path="/job-list" element={<JobList />} />
           <Route path="/projects" element={<OurProjects />} />
-          <Route path="/project-details" element={<ProjectDetails />} />
+          <Route path="/project-details/:id" element={<ProjectDetails />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/blog" element={<Blog/>} />
         </Routes>
 
         {/* <Home /> */}

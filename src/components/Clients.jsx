@@ -4,6 +4,12 @@ import img1 from "../assets/images/bg/client21.png";
 import img2 from "../assets/images/icons/quote4.svg";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+// import required modules
+import { Pagination, Navigation } from "swiper";
 const Clients = () => {
   return (
     <>
@@ -20,35 +26,52 @@ const Clients = () => {
               <div className="testimonial-area mt-8">
                 <div className="swiper testimonial-slider4 swiper-fix">
                   <div className="swiper-wrapper flex">
-                    <div className="swiper-slide">
-                      <div
-                        className="testimonial-single3 style-3 wow fadeInUp"
-                        data-wow-duration="1.5s"
-                        data-wow-delay=".2s"
-                      >
-                        <div className="author-area">
-                          <div className="author gap-3">
-                            <div className="author-img">
-                              <img src={img1} alt="image" />
+                    <Swiper
+                      slidesPerView={1}
+                      spaceBetween={20}
+                      slidesPerGroup={1}
+                      loop={true}
+                      loopFillGroupWithBlank={true}
+                      pagination={{
+                        clickable: true,
+                      }}
+                      navigation={true}
+                      modules={[Pagination, Navigation]}
+                      className="mySwiper w-full pb-12"
+                    >
+                      <SwiperSlide>
+                        <div className="swiper-slide">
+                          <div
+                            className="testimonial-single3 style-3 wow fadeInUp"
+                            data-wow-duration="1.5s"
+                            data-wow-delay=".2s"
+                          >
+                            <div className="author-area">
+                              <div className="author gap-3">
+                                <div className="author-img">
+                                  <img src={img1} alt="image" />
+                                </div>
+                                <div className="author-desig">
+                                  <h5>Johan Martin Sr</h5>
+                                  <p>Manager</p>
+                                </div>
+                              </div>
+                              <img src={img2} alt="image" />
                             </div>
-                            <div className="author-desig">
-                              <h5>Johan Martin Sr</h5>
-                              <p>Manager</p>
-                            </div>
+                            <p className=" text-gray-600 !text-sm !leading-6 !font-normal">
+                              You have been absolutely wonderful for Kinship
+                              Center, & I can't thank you enough for all your
+                              tremendous skills, support and patience specia lly
+                              during our merger. You will always be Kinship
+                              Center's vendor of choice! Lorem Ipsum is simply
+                              dumm of free available in market the way printing
+                              and typesetting industry has been the industry's
+                              standard dummy text ever.
+                            </p>
                           </div>
-                          <img src={img2} alt="image" />
                         </div>
-                        <p className=" text-gray-600 !text-sm !leading-6 !font-normal">
-                          You have been absolutely wonderful for Kinship Center,
-                          & I can't thank you enough for all your tremendous
-                          skills, support and patience specia lly during our
-                          merger. You will always be Kinship Center's vendor of
-                          choice! Lorem Ipsum is simply dumm of free available
-                          in market the way printing and typesetting industry
-                          has been the industry's standard dummy text ever.
-                        </p>
-                      </div>
-                    </div>
+                      </SwiperSlide>
+                    </Swiper>
                   </div>
                   <div className="testimonial-footer">
                     <div className="testimonial4-pagination"></div>

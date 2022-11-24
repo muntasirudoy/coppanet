@@ -15,8 +15,9 @@ const Footer = () => {
                     <img alt="image" src={logo} />
                   </a>
                   <p>
-                    Lorem ipsum dolor sit amet consecte tur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore.
+                    We develop mobile application platforms across different
+                    sectors including Healthcare, Travel and Tourism, Fintech
+                    and E-Commerce.
                   </p>
                   <form>
                     <div className="input-with-btn flex jusify-content-start align-items-strech">
